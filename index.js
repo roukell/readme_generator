@@ -56,8 +56,16 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-   
+    inquirer.prompt(questions).then(function({username, email, project}) {
     
+        if (username !== "" && email !== "" && project !=="") {
+            console.log(generateMarkdown({username, email, project}));
+            
+        }
+        else {
+            console.log("Please enter all information");
+            init();
+        }
 }
 
 // function call to initialize program
