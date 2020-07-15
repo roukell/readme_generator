@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
 const questions = [{
@@ -51,24 +51,29 @@ const questions = [{
 
 // function to write README file
 function writeToFile(fileName, data) {
-
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+          throw err;
+        }
+        console.log("Successful");
+      });
 }
 
 // function to initialize program
 function init() {
-    inquirer.prompt(questions).then(function({username, email, project}) {
-    
+    inquirer
+    .prompt(questions)
+    .then(function({username, email, project}) {
         if (username !== "" && email !== "" && project !=="") {
             console.log(generateMarkdown({username, email, project}));
-            
+            writeToFile("README.md", generateMarkdown({username, email, project}));
         }
         else {
             console.log("Please enter all information");
             init();
         }
+    })
 }
 
 // function call to initialize program
 init();
-
-
