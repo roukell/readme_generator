@@ -26,7 +26,7 @@ const questions = [{
   {
     type: "list",
     message: "What kind of license should your project have?",
-    name: "license",
+    name: "licence",
     choices: [
         "MIT", 
         "GPLv3", 
@@ -37,12 +37,12 @@ const questions = [{
   {
     type: "input",
     message: "What command should be run to install dependencies?",
-    name: "commandDep"
+    name: "installDepCommand"
   },
   {
     type: "input",
     message: "What command should be run to run tests?",
-    name: "commandRun"
+    name: "runTestCommand"
   },{
     type: "input",
     message: "What does the user need to know about using the repo?",
@@ -69,10 +69,38 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
     .prompt(questions)
-    .then(function({username, email, project}) {
+    .then(function({
+      username, 
+      email, 
+      project, 
+      description, 
+      licence, 
+      installDepCommand, 
+      runTestCommand, 
+      repoUse, 
+      repoContribute}) {
         if (username !== "" && email !== "" && project !=="") {
-            console.log(generateMarkdown({username, email, project}));
-            writeToFile("README.md", generateMarkdown({username, email, project}));
+            console.log(generateMarkdown({
+              username, 
+              email, 
+              project, 
+              description, 
+              licence, 
+              installDepCommand, 
+              runTestCommand, 
+              repoUse, 
+              repoContribute}));
+
+            writeToFile("README.md", generateMarkdown({
+              username, 
+              email, 
+              project, 
+              description, 
+              licence, 
+              installDepCommand, 
+              runTestCommand, 
+              repoUse, 
+              repoContribute}));
         }
         else {
             console.log("Please enter all information");

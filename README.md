@@ -1,8 +1,8 @@
 
-  # s
+  # Homework
 
   ## Description
-  * undefined
+  * This is my homework
 
   ## Table of Contents
   * [Installation](#installation)
@@ -15,6 +15,7 @@
   ## Installation
   ## Usage
   ## License
+  * GPLv3
   ## Contributing
   ## Tests
   ## Questions

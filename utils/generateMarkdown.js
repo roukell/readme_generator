@@ -17,6 +17,7 @@ function generateMarkdown(data) {
   ## Installation
   ## Usage
   ## License
+  * ${data.licence}
   ## Contributing
   ## Tests
   ## Questions
