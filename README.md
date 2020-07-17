@@ -1,8 +1,9 @@
 
-  # Homework
+  # readme_generator
+  ![License](https://img.shields.io/github/license/roukell/readme_generator)
 
   ## Description
-  * This is my homework
+  * Generates readme file
 
   ## Table of Contents
   * [Installation](#installation)
@@ -13,11 +14,18 @@
   * [Questions](#Questions)
 
   ## Installation
+  To install necessary dependencies, run the following command:
+
+      npm i
+
   ## Usage
   ## License
-  * GPLv3
+  * MIT
+
   ## Contributing
   ## Tests
   ## Questions
+  If you have any questions, feel free to contact me via email: roukell@hotmail.com
+
   
   
