@@ -2,7 +2,7 @@
 function generateMarkdown(data) {
   return `
   # ${data.project}
-  ![License](https://img.shields.io/github/license/${data.username}/${data.project})
+  ![License](https://img.shields.io/github/license/${data.username}/${data.repoName})
 
   ## Description
   * ${data.description}

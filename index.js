@@ -20,6 +20,11 @@ const questions = [{
   },
   {
     type: "input",
+    message: "What is your repository's name?",
+    name: "repoName"
+  },
+  {
+    type: "input",
     message: "Please write a short description of your project?",
     name: "description"
   },
@@ -72,7 +77,8 @@ function init() {
     .then(function({
       username, 
       email, 
-      project, 
+      project,
+      repoName, 
       description, 
       licence, 
       installDepCommand, 
@@ -83,7 +89,8 @@ function init() {
             console.log(generateMarkdown({
               username, 
               email, 
-              project, 
+              project,
+              repoName, 
               description, 
               licence, 
               installDepCommand, 
@@ -94,7 +101,8 @@ function init() {
             writeToFile("README.md", generateMarkdown({
               username, 
               email, 
-              project, 
+              project,
+              repoName, 
               description, 
               licence, 
               installDepCommand, 

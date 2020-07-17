@@ -1,9 +1,9 @@
 
-  # readme_generator
+  # Readme Generator
   ![License](https://img.shields.io/github/license/roukell/readme_generator)
 
   ## Description
-  * Generates readme file
+  * Generate readme file
 
   ## Table of Contents
   * [Installation](#installation)
@@ -25,7 +25,7 @@
   ## Contributing
   ## Tests
   ## Questions
-  If you have any questions, feel free to contact me via email: roukell@hotmail.com
+  If you have any questions, feel free to contact me via email: yiling.melody.lo@gmail.com
 
   
   
