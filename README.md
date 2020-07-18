@@ -19,7 +19,7 @@
       npm i
 
   ## Usage
-  Please type in your GitHub repository name properly and remember to set a licence for your repo. By doing both, the licence badge will be generated properly.
+  To generate readme file, run "index.js" in Node js, and then answer all the questions. Please type in your GitHub repository name properly and remember to set a licence for your repo. By doing both, the licence badge will be generated properly.
 
   ## License
   * MIT
