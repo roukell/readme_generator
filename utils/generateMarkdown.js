@@ -21,13 +21,22 @@ function generateMarkdown(data) {
       ${data.installDepCommand}
 
   ## Usage
+  ${data.repoUse}
+
   ## License
   * ${data.licence}
 
   ## Contributing
+  ${data.repoContribute}
+
   ## Tests
+  To eliminate bugs, type the following commend to test application:
+
+      ${data.runTestCommand}
+
   ## Questions
   If you have any questions, feel free to contact me via email: ${data.email}
+  My GitHub profile: https://github.com/${data.username}
 
   
   `
