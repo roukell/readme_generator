@@ -85,18 +85,28 @@ function init() {
       runTestCommand, 
       repoUse, 
       repoContribute}) {
-        if (username !== "" && email !== "" && project !=="") {
-            console.log(generateMarkdown({
-              username, 
-              email, 
-              project,
-              repoName, 
-              description, 
-              licence, 
-              installDepCommand, 
-              runTestCommand, 
-              repoUse, 
-              repoContribute}));
+        if (
+        username !== "" && 
+        email !== "" && 
+        project !=="" &&
+        repoName !=="" && 
+        description !=="" && 
+        licence !=="" && 
+        installDepCommand !=="" && 
+        runTestCommand !=="" &&
+        repoUse !=="" &&
+        repoContribute !=="") {
+            // console.log(generateMarkdown({
+            //   username, 
+            //   email, 
+            //   project,
+            //   repoName, 
+            //   description, 
+            //   licence, 
+            //   installDepCommand, 
+            //   runTestCommand, 
+            //   repoUse, 
+            //   repoContribute}));
 
             writeToFile("README.md", generateMarkdown({
               username, 

@@ -35,8 +35,8 @@ function generateMarkdown(data) {
       ${data.runTestCommand}
 
   ## Questions
-  If you have any questions, feel free to contact me via email: ${data.email}
-  My GitHub profile: https://github.com/${data.username}
+  * If you have any questions, feel free to contact me via email: ${data.email}
+  * My GitHub profile: https://github.com/${data.username}
 
   
   `
