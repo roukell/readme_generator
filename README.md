@@ -37,6 +37,6 @@
   * My GitHub profile: https://github.com/roukell
   
   ## Demonstration
-  * To watch demonstration of the functionality of the application, simply go to:  or alternatively, you can goto asset and download demo.mp4 to watch it on your computer. 
+  * To watch demonstration of the functionality of the application, simply go to: https://youtu.be/_ehdNqJEbpM or alternatively, you can goto asset and download demo.mp4 to watch it on your computer. 
   
   
