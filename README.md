@@ -35,6 +35,8 @@
   ## Questions
   * If you have any questions, feel free to contact me via email: yiling.melody.lo@gmail.com
   * My GitHub profile: https://github.com/roukell
-
+  
+  ## Demonstration
+  * To watch demostration of the functionality of the application, simply go to: https://youtu.be/Y-oNltnNpgk or alternatively, you can goto asset and download demo.mp4 to watch it on your computer. 
   
   
